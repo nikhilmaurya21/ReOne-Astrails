@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the benefits of solar energy with RE-One Astralis, a leading solar company offering clean energy solutions, cost savings, and sustainability for homes and businesses." />
+  <meta name="keywords" content="solar energy benefits, clean energy solutions, solar power savings, renewable energy, RE-One Astralis, solar company, sustainable energy, lower energy bills, environmental impact" />
+  <meta name="author" content="RE-One Astralis" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="IN-GJ" />
+  <meta name="geo.placename" content="Ahmedabad, Gujarat, India" />
+  <meta name="geo.position" content="23.0225;72.5714" />
+  <meta name="ICBM" content="23.0225, 72.5714" />
+  <title>Why Go Solar? 6 Compelling Benefits of Solar Energy | RE-One Astralis</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <style>
+    .primary-bg { background-color: #9ccf50; }
+    .primary-text { color: #9ccf50; }
+    .primary-hover:hover { background-color: #8bb945; }
+    .nav-menu { transition: all 0.3s ease; }
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    .slide-up { animation: slideUp 0.8s ease-out; }
+    .hover-scale { transition: transform 0.3s ease; }
+    .hover-scale:hover { transform: scale(1.05); }
+    .section-hidden { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .section-visible { opacity: 1; transform: translateY(0); }
+        @media (max-width: 900px) {
+      .nav-menu { 
+        transform: translateY(-100%);
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 40;
+      }
+      .nav-menu.active { transform: translateY(0); }
+    }
+    
+    /* Specific styles for tablet view (between 640px and 900px) */
+    @media (min-width: 640px) and (max-width: 900px) {
+      .tablet-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .tablet-logo {
+        font-size: 1.1rem;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes slideUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RE-One Astralis",
+      "description": "Solar company providing clean energy solutions, solar panel installation, and energy consultation for homes and businesses.",
+      "url": "https://www.reoneastralis.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "addressCountry": "India",
+        "postalCode": "380015"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0225,
+        "longitude": 72.5714
+      },
+      "telephone": "+91-123-456-7890",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://www.facebook.com/reoneastralis",
+        "https://x.com/Reoneastralis",
+        "https://www.instagram.com/reone_astralis"
+      ]
+    }
+  </script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <!-- Header Section (Directly Embedded) -->
+    <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3 tablet-container">
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="RE-One Astralis Logo - A stylized sun with green rays" class="h-8 w-auto">
+        <span class="font-bold text-lg primary-text tablet-logo">Re-One Astralis</span>
+      </div>
+      <button class="lg:hidden text-gray-600 focus:outline-none" onclick="toggleMenu()">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <nav class="nav-menu lg:flex lg:space-x-6 hidden" id="navMenu">
+          <a href="index.html" class="hover:primary-text block py-2 lg:py-0">Home</a> 
+          <a href="about.html" class="hover:primary-text block py-2 lg:py-0">About</a>
+          <a href="services.html" class="hover:primary-text block py-2 lg:py-0">Services</a>
+          <a href="benefits.html" class="primary-text hover:primary-text font-semibold block py-2 lg:py-0">Benefits</a>
+        <a href="blog.html" class="hover:primary-text block py-2 lg:py-0">Blog</a>
+        <a href="faq.html" class="hover:primary-text block py-2 lg:py-0">FAQ</a>
+        <a href="calculator.html" class="hover:primary-text block py-2 lg:py-0">Savings Calculator</a>
+        <a href="contact.html" class="hover:primary-text block py-2 lg:py-0">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center text-white py-24 md:py-32 px-4 fade-in" style="background-image: url('assets/benefits/cover.png'); background-attachment: fixed;">
+    <div class="container mx-auto text-left max-w-3xl">
+      <h1 class="text-3xl md:text-5xl font-bold leading-tight slide-up">Benefits of Going Solar</h1>
+      <p class="mt-4 text-lg slide-up">Discover how solar energy can transform your life with cost savings, sustainability, and energy independence.</p>
+      <a href="contact.html" class="mt-6 inline-block primary-bg text-white px-6 py-3 rounded-md font-semibold primary-hover slide-up hover-scale">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Merged Benefits Section -->
+  <section id="benefits" class="py-16 bg-white section-hidden">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold primary-text mb-6 text-center fade-in">Explore the Benefits of Solar Energy</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Lower Energy Bills</h3>
+          <p class="text-gray-600">Significantly reduce your monthly electricity costs by harnessing the power of the sun. Solar energy allows you to generate your own electricity, cutting down on utility expenses over time.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Environmental Impact</h3>
+          <p class="text-gray-600">Reduce your carbon footprint and contribute to a cleaner, greener planet with renewable energy. Solar power helps lower greenhouse gas emissions, supporting global efforts to combat climate change.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Energy Independence</h3>
+          <p class="text-gray-600">Generate your own electricity and reduce reliance on traditional power grids. Solar systems provide you with the freedom to produce your own energy, even in remote locations.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Increase Property Value</h3>
+          <p class="text-gray-600">Homes with solar panels often see an increase in property value due to energy savings. Potential buyers value the long-term cost benefits and sustainability of solar-powered homes.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Government Incentives</h3>
+          <p class="text-gray-600">Take advantage of subsidies and tax benefits for adopting solar energy solutions. Many governments offer financial incentives to encourage the transition to renewable energy sources.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Low Maintenance</h3>
+          <p class="text-gray-600">Solar systems require minimal upkeep, offering long-term reliability and savings. With occasional cleaning and inspections, your solar panels can perform efficiently for decades.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Financial Savings</h3>
+          <p class="text-gray-600">Solar energy drastically cuts down your electricity expenses. By generating your own power, you can save thousands over the lifetime of your system, with many customers seeing a return on investment within a few years.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Sustainability</h3>
+          <p class="text-gray-600">Solar power is a renewable resource that reduces greenhouse gas emissions. By choosing solar, you’re helping combat climate change and promoting a sustainable future for generations to come.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Energy Reliability</h3>
+          <p class="text-gray-600">With solar panels and battery storage, you can ensure a steady power supply, even during outages. This is especially valuable in regions with unreliable grids.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-scale slide-up">
+          <h3 class="font-semibold text-lg primary-text mb-2">Community Impact</h3>
+          <p class="text-gray-600">Adopting solar energy sets a positive example, encouraging others in your community to embrace clean energy solutions and collectively reduce environmental harm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="installation-process" class="bg-white pb-16 px-4 ">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12" style="color: #9ccf50;">
+      Our Simple Installation Process
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+
+      <!-- Step 1 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">1</span>
+          <h3 class="ml-4 font-semibold text-lg">Initial Consultation & Site Assessment</h3>
+        </div>
+        <img src="assets/benefits/installation_1.png" alt="Site Assessment" class="rounded mb-4">
+        <p>Our experts evaluate your energy needs and assess your property's solar potential.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">2</span>
+          <h3 class="ml-4 font-semibold text-lg">System Design & Proposal</h3>
+        </div>
+        <img src="assets/benefits/installation_2.png" alt="System Design" class="rounded mb-4">
+        <p>We design a custom solar system tailored to your home and provide a detailed proposal.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">3</span>
+          <h3 class="ml-4 font-semibold text-lg">Permitting & Approvals</h3>
+        </div>
+        <img src="assets/benefits/installation_3.png" alt="Permits" class="rounded mb-4">
+        <p>We handle all necessary permits and approvals from local authorities and utility companies.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">4</span>
+          <h3 class="ml-4 font-semibold text-lg">Equipment Ordering & Delivery</h3>
+        </div>
+        <img src="assets/benefits/installation_4.png" alt="Equipment Delivery" class="rounded mb-4">
+        <p>Solar panels, inverters, and mounting equipment are ordered and delivered to your site.</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">5</span>
+          <h3 class="ml-4 font-semibold text-lg">Professional Installation</h3>
+        </div>
+        <img src="assets/benefits/installation_5.png" alt="Installation" class="rounded mb-4">
+        <p>Certified installers mount the system, install panels, and connect electrical components.</p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">6</span>
+          <h3 class="ml-4 font-semibold text-lg">Inspection & Grid Connection</h3>
+        </div>
+        <img src="assets/benefits/installation_6.png" alt="Grid Connection" class="rounded mb-4">
+        <p>The system is inspected by utility/local authorities and connected to the power grid.</p>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="flex flex-col border rounded-lg p-6 shadow hover:shadow-lg transition md:col-span-2">
+        <div class="flex items-center mb-4">
+          <span class="h-8 w-8 flex items-center justify-center rounded-full text-white font-bold" style="background-color: #9ccf50;">7</span>
+          <h3 class="ml-4 font-semibold text-lg">System Activation & Monitoring Setup</h3>
+        </div>
+        <img src="assets/benefits/installation_7.png" alt="Monitoring Setup" class="rounded mb-4">
+        <p>Once approved, your system is activated, and we help you set up monitoring to track performance.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CTA Section -->
+  <section id="contact" class="primary-bg text-white py-12 text-center section-hidden">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 slide-up">Ready to Experience These Benefits?</h2>
+    <p class="mb-6 text-white max-w-xl mx-auto slide-up">Contact RE-One Astralis today for a free consultation and personalized solar quote.</p>
+    <a href="contact.html" class="bg-white primary-text px-6 py-3 rounded font-semibold hover:bg-gray-100 hover-scale slide-up">Get Your Free Quote</a>
+  </section>
+
+  <!-- Footer Section (Directly Embedded) -->
+  <footer class="text-white py-12 section-hidden" style="background-color: black;">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div class="slide-up">
+          <div class="flex items-center space-x-2 mb-4">
+            <img src="assets/logo-name.png" alt="RE-One Astralis Logo - A stylized sun with green rays" style="background-color: black;" class="h-25 w-40">
+          </div>
+          <p class="text-sm text-gray-100">Powering a sustainable future with clean solar energy solutions.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 slide-up">
+          <div>
+            <h5 class="font-semibold text-white mb-3">Company</h5>
+            <ul class="space-y-2 text-sm">
+              <li><a href="about.html" class="hover:text-gray-200">About Us</a></li>
+              <li><a href="contact.html" class="hover:text-gray-200">Contact Us</a></li>
+              <li><a href="faq.html" class="hover:text-gray-200">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-semibold text-white mb-3">Resources</h5>
+            <ul class="space-y-2 text-sm">
+              <li><a href="projects.html" class="hover:text-gray-200">Project Gallery</a></li>
+              <li><a href="testimonials.html" class="hover:text-gray-200">Customer Testimonials</a></li>
+              <li><a href="blog.html" class="hover:text-gray-200">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide-up">
+          <h5 class="font-semibold text-white mb-3">Get in Touch</h5>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center space-x-2">
+<svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9-6 9 6v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v4"></path>
+                            </svg>
+              <span>T/F, Swagat Complex, Opp. Petrol Pump, Rambag Road, Maninagar, Ahmedabad-380008</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M9 4h6M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
+              </svg>
+              <a href="mailto:reoneastralispvtltd@gmail.com" class="hover:text-gray-200">reoneastralispvtltd@gmail.com</a>
+            </li>
+            <li class="flex items-center space-x-2">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <a href="tel:+911234567890" class="hover:text-gray-200">+91 9157742424</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-400 pt-6 text-center slide-up">
+        <div class="flex justify-center space-x-4 mb-4">
+          
+          <a href="https://x.com/Reoneastralis" class="hover-scale">
+            <svg class="h-6 w-6 hover:text-gray-200" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/reone_astralis" class="hover-scale">
+            <svg class="h-6 w-6 hover:text-gray-200" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 3.668.227 1.981 1.97 1.826 5.333.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.155 3.363 1.898 5.05 5.261 5.205C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 3.363-.155 5.05-1.898 5.205-5.261C23.986 15.668 24 15.259 24 12c0-3.259-.014-3.668-.072-4.948-.155-3.363-1.898-5.05-5.261-5.205C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm">© 2025 RE-One Astralis. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+      menu.classList.toggle('hidden');
+    }
+
+    const sections = document.querySelectorAll('.section-hidden');
+    const revealSection = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add('section-visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealSection);
+    revealSection();
+  </script>
+</body>
+</html> 
