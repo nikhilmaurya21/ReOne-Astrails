@@ -61,6 +61,22 @@
       transform: translateY(0);
     }
 
+    .announcement-section {
+      background: linear-gradient(135deg, #9ccf50 0%, #7aa83e 100%);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: pulse 2s infinite;
+    }
+
+    .announcement-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
     @media (max-width: 900px) {
       .nav-menu {
         transform: translateY(-100%);
@@ -77,6 +93,10 @@
 
       .nav-menu.active {
         transform: translateY(0);
+      }
+
+      .announcement-text {
+        font-size: 1.2rem;
       }
     }
 
@@ -132,6 +152,89 @@
       }
     }
 
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.02);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+   .h-53 {
+    height: 230px; /* Tailwind's h-53 translates to 212px (53 * 4px) */
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .object-cover {
+    object-fit: cover; /* Ensures images scale to fill the container without distortion */
+  }
+
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .primary-bg {
+    background-color: #9ccf50;
+  }
+
+  .primary-text {
+    color: #9ccf50;
+  }
+
+  .primary-hover:hover {
+    background-color: #8bb945;
+  }
+
+  .section-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .section-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
     .overlay {
       position: absolute;
       top: 0;
@@ -139,7 +242,6 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
-      /* Dark overlay */
       z-index: 1;
     }
   </style>
@@ -178,9 +280,9 @@
 
   <!-- Header Component -->
   <header class="bg-white shadow sticky top-0 z-50">
-    <div class="container mx-auto flex items-center justify-between px-4 py-3 tablet-container">
+    <div class="container mx-auto flex items-center justify-between px-4 py-1 tablet-container">
       <div class="flex items-center space-x-2">
-        <img src="assets/logo.png" alt="Re One Astralis Logo - A stylized sun with green rays" class="h-8 w-auto">
+        <img src="assets/logo.png" alt="Re One Astralis Logo - A stylized sun with green rays" class="h-16 w-auto">
         <span class="font-bold text-lg primary-text tablet-logo">Re One Astralis</span>
       </div>
       <button class="lg:hidden text-gray-600 focus:outline-none" onclick="toggleMenu()">
@@ -201,14 +303,11 @@
     </div>
   </header>
 
-
   <!-- Hero Section -->
   <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-4 fade-in"
     style="background-image: url('assets/HomePage/Banner.png'); background-attachment: fixed;">
-
     <!-- Dark Overlay -->
     <div class="absolute inset-0 bg-black opacity-40"></div>
-
     <!-- Content -->
     <div class="relative container mx-auto text-left max-w-3xl z-10">
       <h1 class="text-3xl md:text-5xl font-bold leading-tight slide-up drop-shadow-lg">
@@ -225,6 +324,14 @@
     </div>
   </section>
 
+  <!-- Announcement Section -->
+  <section class="announcement-section section-hidden">
+    <div class="container mx-auto px-4">
+      <h2 class="announcement-text slide-up">
+        Coming soon: A project that will redefine limits- 1 Megawatt (MW) of innovation and energy.
+      </h2>
+    </div>
+  </section>
 
   <!-- Services Section -->
   <section id="services" class="py-16 bg-white section-hidden">
@@ -307,7 +414,6 @@
               command higher prices in the real estate market.</p>
           </div>
         </div>
-
       </div>
       <a href="./benefits.html"
         class="mt-8 inline-block primary-bg text-white px-6 py-2 rounded-md font-semibold primary-hover hover-scale slide-up">Explore
@@ -317,34 +423,23 @@
 
   <!-- Projects Section -->
   <section id="projects" class="py-16 bg-white section-hidden">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold primary-text mb-6 fade-in" style="color: #004592;">Featured Solar
-        Projects</h2>
-      <p class="mb-10 text-gray-600 max-w-2xl mx-auto fade-in">Discover our recent successful solar installations across
-        the country, highlighting our unwavering commitment to quality, innovation, and sustainable energy solutions as
-        one of India’s leading solar companies.</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="hover-scale slide-up">
-          <img src="assets/HomePage/feature_1.png"
-            alt="Aerial view of a suburban home in Ahmedabad with solar panels on the roof, surrounded by greenery"
-            class="rounded shadow w-full h-53 object-cover">
-        </div>
-        <div class="hover-scale slide-up">
-          <img src="assets/HomePage/feature_2.png"
-            alt="Modern office building in Gujarat with solar panels integrated into the facade, reflecting a clear blue sky"
-            class="rounded shadow w-full h-53 object-cover">
-        </div>
-        <div class="hover-scale slide-up">
-          <img src="assets/HomePage/feature_3.png"
-            alt="Large-scale solar farm in rural Gujarat, India, with rows of panels under a bright sun"
-            class="rounded shadow w-full h-53 object-cover">
-        </div>
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-2xl md:text-3xl font-bold primary-text mb-6 fade-in" style="color: #004592;">Featured Solar Projects</h2>
+    <p class="mb-10 text-gray-600 max-w-2xl mx-auto fade-in">Discover our recent successful solar installations across the country, highlighting our unwavering commitment to quality, innovation, and sustainable energy solutions as one of India’s leading solar companies.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="hover-scale slide-up">
+        <img src="assets/HomePage/feature_1.png" alt="Aerial view of a suburban home in Ahmedabad with solar panels on the roof, surrounded by greenery" class="rounded shadow w-full h-53 object-cover">
       </div>
-      <a href="projects.html"
-        class="mt-8 inline-block primary-bg text-white px-6 py-2 rounded-md font-semibold primary-hover hover-scale slide-up">View
-        Full Project Gallery</a>
+      <div class="hover-scale slide-up">
+        <img src="assets/HomePage/feature_2.png" alt="Modern office building in Gujarat with solar panels integrated into the facade, reflecting a clear blue sky" class="rounded shadow w-full h-53 object-cover">
+      </div>
+      <div class="hover-scale slide-up">
+        <img src="assets/HomePage/feature_4" alt="Large-scale solar farm in rural Gujarat, India, with rows of panels under a bright sun" class="rounded shadow w-full h-53 object-cover">
+      </div>
     </div>
-  </section>
+    <a href="projects.html" class="mt-8 inline-block primary-bg text-white px-6 py-2 rounded-md font-semibold primary-hover hover-scale slide-up">View Full Project Gallery</a>
+  </div>
+</section>
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="bg-gray-50 py-16 section-hidden">
@@ -356,7 +451,7 @@
           <p class="mb-4 text-gray-600 italic">“Choosing Re One Astralis was the best decision we made! Our energy bills
             are gone, and the installation was seamless.”</p>
           <h4 class="font-semibold primary-text">Saileshbhai Talpada</h4>
-          <span class="text-sm text-gray-500">Homeowner, Ahmedabad</span>
+          <span class="text-sm text-gray-500">Homeowner, Kathlal</span>
         </div>
         <div class="bg-white p-6 rounded-lg shadow hover-scale slide-up">
           <p class="mb-4 text-gray-600 italic">"Got both a 3.2kW system for my home and a 15kW for my business from Re
@@ -369,7 +464,7 @@
           <p class="mb-4 text-gray-600 italic">“From consultation to completion, the team was fantastic. They explained
             everything clearly and worked perfectly.”</p>
           <h4 class="font-semibold primary-text">Jasodaben Bhogilal</h4>
-          <span class="text-sm text-gray-500">Residential Client, Ahmedabad</span>
+          <span class="text-sm text-gray-500">Residential Client, Kathlal</span>
         </div>
       </div>
     </div>
@@ -388,9 +483,8 @@
   <div id="footer-content">
     <footer class="text-black" style="background-color: #ffffff;">
       <div class="container mx-auto px-4">
-        <!-- Top Section: Logo, Navigation, and Contact -->
+        <!-- Top-VTop Section: Logo, Navigation, and Contact -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
-          <!-- Logo and Tagline -->
           <!-- Logo and Tagline -->
           <div class="slide-up flex flex-col item-center justify-center"
             style="margin-top: -10px; justify-items: center; align-items: flex-start;">
@@ -436,8 +530,8 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 10h18M9 4h6M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
                 </svg>
-                <a href="mailto:reoneastralispvtltd@gmail.com"
-                  class="text-black hover:text-gray-600">reoneastralispvtltd@gmail.com</a>
+                <a href="mailto:info@reoneastralis.com"
+                  class="text-black hover:text-gray-600">info@reoneastralis.com</a>
               </li>
               <li class="flex items-center space-x-2">
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
