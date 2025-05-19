@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn how to choose the right solar panel with Re One Astralis. Discover key factors like efficiency, durability, and cost in Ahmedabad, Gujarat, India." />
-  <meta name="keywords" content="choose solar panel, solar panel selection guide, solar panel efficiency, solar panel durability, Re One Astralis blog, Ahmedabad solar panels" />
+  <meta name="description"
+    content="Learn how to choose the right solar panel with Re One Astralis. Discover key factors like efficiency, durability, and cost in Ahmedabad, Gujarat, India." />
+  <meta name="keywords"
+    content="choose solar panel, solar panel selection guide, solar panel efficiency, solar panel durability, Re One Astralis blog, Ahmedabad solar panels" />
   <meta name="author" content="Re One Astralis" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="IN-GJ" />
@@ -15,46 +18,85 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <style>
-    .primary-bg { background-color: #9ccf50; }
-    .primary-text { color: #9ccf50; }
-    .primary-hover:hover { background-color: #8bb945; }
-    .nav-menu { transition: all 0.3s ease; }
-    .fade-in { animation: fadeIn 1s ease-in-out; }
-    .slide-up { animation: slideUp 0.8s ease-out; }
-    .hover-scale { transition: transform 0.3s ease; }
-    .hover-scale:hover { transform: scale(1.05); }
-    .section-hidden { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-    .section-visible { opacity: 1; transform: translateY(0); }
-    .hero-gradient { 
-      background: linear-gradient(135deg, #9ccf50 0%, #7aa83e 100%); 
+    .primary-bg {
+      background-color: #9ccf50;
     }
+
+    .primary-text {
+      color: #9ccf50;
+    }
+
+    .primary-hover:hover {
+      background-color: #8bb945;
+    }
+
+    .nav-menu {
+      transition: all 0.3s ease;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .slide-up {
+      animation: slideUp 0.8s ease-out;
+    }
+
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+
+    .section-hidden {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    .section-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, #9ccf50 0%, #7aa83e 100%);
+    }
+
     /* Table Styling */
     .blog-table-container {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
     }
+
     .blog-table {
       width: 100%;
       border-collapse: collapse;
     }
-    .blog-table th { 
-      background-color: #004592; 
-      color: white; 
-      padding: 0.75rem; 
-      text-align: left; 
+
+    .blog-table th {
+      background-color: #004592;
+      color: white;
+      padding: 0.75rem;
+      text-align: left;
       font-size: 1rem;
     }
-    .blog-table td { 
-      padding: 0.75rem; 
-      border-b: 1px solid #e5e7eb; 
+
+    .blog-table td {
+      padding: 0.75rem;
+      border-b: 1px solid #e5e7eb;
       font-size: 0.95rem;
     }
-    .blog-table tr:nth-child(even) { 
-      background-color: #f9fafb; 
+
+    .blog-table tr:nth-child(even) {
+      background-color: #f9fafb;
     }
+
     /* Responsive Navigation */
     @media (max-width: 900px) {
-      .nav-menu { 
+      .nav-menu {
         transform: translateY(-100%);
         position: absolute;
         top: 64px;
@@ -63,93 +105,129 @@
         background: white;
         flex-direction: column;
         padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 40;
       }
-      .nav-menu.active { 
-        transform: translateY(0); 
+
+      .nav-menu.active {
+        transform: translateY(0);
       }
+
       .nav-menu a {
         font-size: 1rem;
         padding: 0.5rem 0;
       }
     }
+
     /* Tablet View (640px to 900px) */
     @media (min-width: 640px) and (max-width: 900px) {
       .tablet-container {
         padding-left: 2rem;
         padding-right: 2rem;
       }
+
       .tablet-logo {
         font-size: 1.1rem;
       }
-      .blog-table th, .blog-table td {
+
+      .blog-table th,
+      .blog-table td {
         padding: 0.5rem;
         font-size: 0.9rem;
       }
+
       .blog-table th {
         font-size: 0.95rem;
       }
     }
+
     /* Mobile View (below 640px) */
     @media (max-width: 640px) {
       .container {
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
       .tablet-logo {
         font-size: 1rem;
       }
-      .blog-table th, .blog-table td {
+
+      .blog-table th,
+      .blog-table td {
         padding: 0.4rem;
         font-size: 0.85rem;
       }
+
       .blog-table th {
         font-size: 0.9rem;
       }
+
       /* Adjust typography for mobile */
       h1 {
         font-size: 1.75rem !important;
       }
+
       h2 {
         font-size: 1.5rem !important;
       }
-      p, li {
+
+      p,
+      li {
         font-size: 0.95rem !important;
       }
+
       /* Adjust section padding */
       .py-16 {
         padding-top: 3rem !important;
         padding-bottom: 3rem !important;
       }
+
       .md\:py-24 {
         padding-top: 4rem !important;
         padding-bottom: 4rem !important;
       }
+
       /* Footer adjustments */
       .footer-grid {
         grid-template-columns: 1fr !important;
       }
-      .footer-grid > div {
+
+      .footer-grid>div {
         text-align: center;
       }
+
       .footer-grid ul {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+
       .footer-grid .grid-cols-2 {
         grid-template-columns: 1fr !important;
         gap: 2rem !important;
       }
     }
+
     @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
+
     @keyframes slideUp {
-      0% { transform: translateY(20px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
   </style>
   <script type="application/ld+json">
@@ -178,6 +256,7 @@
     }
   </script>
 </head>
+
 <body class="font-sans antialiased text-gray-800">
   <!-- Header Section -->
   <header class="bg-white shadow sticky top-0 z-50">
@@ -192,12 +271,12 @@
         </svg>
       </button>
       <nav class="nav-menu lg:flex lg:space-x-6 hidden" id="navMenu">
-        <a href="index.html" class="hover:primary-text block py-2 lg:py-0">Home</a> 
+        <a href="index.html" class="hover:primary-text block py-2 lg:py-0">Home</a>
         <a href="about.html" class="hover:primary-text block py-2 lg:py-0">About</a>
         <a href="services.html" class="hover:primary-text block py-2 lg:py-0">Services</a>
         <a href="benefits.html" class="hover:primary-text block py-2 lg:py-0">Benefits</a>
         <a href="blog.html" class="primary-text hover:primary-text font-semibold block py-2 lg:py-0">Blog</a>
-        <a href="faq.html" class="hover:primary-text block py-2 lg:py-0">FAQ</a>  
+        <a href="faq.html" class="hover:primary-text block py-2 lg:py-0">FAQ</a>
         <a href="calculator.html" class="hover:primary-text block py-2 lg:py-0">Savings Calculator</a>
         <a href="contact.html" class="hover:primary-text block py-2 lg:py-0">Contact</a>
       </nav>
@@ -218,17 +297,27 @@
       <article class="prose prose-lg mx-auto slide-up">
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mb-6">Introduction</h2>
         <p class="text-gray-700 leading-relaxed">
-          Choosing the right solar panel is a critical decision that impacts the efficiency, cost-effectiveness, and longevity of your solar energy system. With so many options available, it’s easy to feel overwhelmed. At Re One Astralis, we’re here to simplify the process for our clients in Ahmedabad, Gujarat, India. In this blog post, we’ll guide you through five key factors to consider when selecting the perfect solar panel for your home or business, with detailed tables providing real-world data to help you make an informed choice.
+          Choosing the right solar panel is a critical decision that impacts the efficiency, cost-effectiveness, and
+          longevity of your solar energy system. With so many options available, it’s easy to feel overwhelmed. At Re
+          One Astralis, we’re here to simplify the process for our clients in Ahmedabad, Gujarat, India. In this blog
+          post, we’ll guide you through five key factors to consider when selecting the perfect solar panel for your
+          home or business, with detailed tables providing real-world data to help you make an informed choice.
         </p>
 
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mt-10 mb-6 flex items-center">
-          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"></path>
+          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z">
+            </path>
           </svg>
           1. Efficiency Rating
         </h2>
         <p class="text-gray-700 leading-relaxed mb-4">
-          The efficiency rating of a solar panel indicates how much sunlight it can convert into electricity. Higher-efficiency panels generate more power in a smaller area, which is ideal for urban settings like Ahmedabad. The table below shows efficiency ratings and capacities for different panel types, reflecting typical options available in Gujarat as of 2025.
+          The efficiency rating of a solar panel indicates how much sunlight it can convert into electricity.
+          Higher-efficiency panels generate more power in a smaller area, which is ideal for urban settings like
+          Ahmedabad. The table below shows efficiency ratings and capacities for different panel types, reflecting
+          typical options available in Gujarat as of 2025.
         </p>
         <div class="blog-table-container">
           <table class="blog-table">
@@ -263,17 +352,23 @@
           </table>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          At Re One Astralis, we recommend panels with an efficiency rating of 18% or higher for optimal performance, especially in space-constrained areas like Ahmedabad.
+          At Re One Astralis, we recommend panels with an efficiency rating of 18% or higher for optimal performance,
+          especially in space-constrained areas like Ahmedabad.
         </p>
 
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mt-10 mb-6 flex items-center">
-          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"></path>
+          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z">
+            </path>
           </svg>
           2. Durability and Warranty
         </h2>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Solar panels must withstand Gujarat’s climate, including high temperatures and monsoon rains. The table below lists durability features and warranty periods for panels commonly available in India, ensuring long-term reliability.
+          Solar panels must withstand Gujarat’s climate, including high temperatures and monsoon rains. The table below
+          lists durability features and warranty periods for panels commonly available in India, ensuring long-term
+          reliability.
         </p>
         <div class="blog-table-container">
           <table class="blog-table">
@@ -308,17 +403,23 @@
           </table>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Re One Astralis partners with manufacturers offering panels with at least a 25-year performance warranty for high-capacity models, ensuring reliability for our clients.
+          Re One Astralis partners with manufacturers offering panels with at least a 25-year performance warranty for
+          high-capacity models, ensuring reliability for our clients.
         </p>
 
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mt-10 mb-6 flex items-center">
-          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"></path>
+          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z">
+            </path>
           </svg>
           3. Cost and Budget
         </h2>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Cost is a key factor, but long-term savings are equally important. The table below reflects 2025 pricing in Gujarat, including subsidies under the Gujarat Solar Policy, and estimated payback periods based on average electricity rates.
+          Cost is a key factor, but long-term savings are equally important. The table below reflects 2025 pricing in
+          Gujarat, including subsidies under the Gujarat Solar Policy, and estimated payback periods based on average
+          electricity rates.
         </p>
         <div class="blog-table-container">
           <table class="blog-table">
@@ -353,17 +454,22 @@
           </table>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Re One Astralis offers a range of panels to suit different budgets, ensuring you can leverage Gujarat’s subsidies to maximize savings.
+          Re One Astralis offers a range of panels to suit different budgets, ensuring you can leverage Gujarat’s
+          subsidies to maximize savings.
         </p>
 
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mt-10 mb-6 flex items-center">
-          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"></path>
+          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z">
+            </path>
           </svg>
           4. Type of Solar Panel
         </h2>
         <p class="text-gray-700 leading-relaxed mb-4">
-          Different types of solar panels suit different needs. The table below compares monocrystalline, polycrystalline, and thin-film panels available in Gujarat, focusing on capacity, efficiency, and use case.
+          Different types of solar panels suit different needs. The table below compares monocrystalline,
+          polycrystalline, and thin-film panels available in Gujarat, focusing on capacity, efficiency, and use case.
         </p>
         <div class="blog-table-container">
           <table class="blog-table">
@@ -398,17 +504,22 @@
           </table>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          At Re One Astralis, we help you choose the type that best suits your needs, considering factors like space, budget, and energy goals.
+          At Re One Astralis, we help you choose the type that best suits your needs, considering factors like space,
+          budget, and energy goals.
         </p>
 
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mt-10 mb-6 flex items-center">
-          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"></path>
+          <svg style="color: #004592;" class="h-8 w-8 mr-3 text-[#004592]" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2zm0 2c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm0 6c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z">
+            </path>
           </svg>
           5. Brand Reputation
         </h2>
         <p class="text-gray-700 leading-relaxed mb-4">
-          The reputation of the solar panel manufacturer is crucial for quality and reliability. The table below ranks brands available in India, based on capacity, customer feedback, and certifications.
+          The reputation of the solar panel manufacturer is crucial for quality and reliability. The table below ranks
+          brands available in India, based on capacity, customer feedback, and certifications.
         </p>
         <div class="blog-table-container">
           <table class="blog-table">
@@ -443,12 +554,17 @@
           </table>
         </div>
         <p class="text-gray-700 leading-relaxed">
-          Re One Astralis works with top-tier manufacturers like SolarTech and EcoBright to provide panels that meet the highest standards, ensuring long-term satisfaction for our clients in Ahmedabad.
+          Re One Astralis works with top-tier manufacturers like SolarTech and EcoBright to provide panels that meet the
+          highest standards, ensuring long-term satisfaction for our clients in Ahmedabad.
         </p>
 
         <h2 style="color: #004592;" class="text-2xl font-bold primary-text mt-10 mb-6">Conclusion</h2>
         <p class="text-gray-700 leading-relaxed">
-          Choosing the right solar panel involves considering factors like efficiency rating, durability, cost, type, and brand reputation. The tables above provide real-world data to help you compare options and make an informed decision. At Re One Astralis, we’re here to guide you through the process, offering personalized solutions for homes and businesses in Ahmedabad, Gujarat. Ready to find the perfect solar panel for your needs? Contact us today to get started.
+          Choosing the right solar panel involves considering factors like efficiency rating, durability, cost, type,
+          and brand reputation. The tables above provide real-world data to help you compare options and make an
+          informed decision. At Re One Astralis, we’re here to guide you through the process, offering personalized
+          solutions for homes and businesses in Ahmedabad, Gujarat. Ready to find the perfect solar panel for your
+          needs? Contact us today to get started.
         </p>
       </article>
     </div>
@@ -457,90 +573,103 @@
   <!-- CTA Section -->
   <section class="bg-gray-50 py-16 section-hidden">
     <div class="container mx-auto px-4 text-center">
-      <h2 style="color: #004592;" class="text-2xl md:text-3xl font-bold primary-text mb-4 fade-in">Need Help Choosing a Solar Panel?</h2>
-      <p class="text-lg text-gray-600 mb-6 slide-up">Contact Re One Astralis for expert guidance and personalized solar solutions.</p>
-      <a href="contact.html" class="inline-block primary-bg text-white px-8 py-3 rounded-md font-semibold primary-hover hover-scale slide-up">Get Expert Advice</a>
+      <h2 style="color: #004592;" class="text-2xl md:text-3xl font-bold primary-text mb-4 fade-in">Need Help Choosing a
+        Solar Panel?</h2>
+      <p class="text-lg text-gray-600 mb-6 slide-up">Contact Re One Astralis for expert guidance and personalized solar
+        solutions.</p>
+      <a href="contact.html"
+        class="inline-block primary-bg text-white px-8 py-3 rounded-md font-semibold primary-hover hover-scale slide-up">Get
+        Expert Advice</a>
     </div>
   </section>
 
   <!-- Footer Section -->
-      <div id="footer-content">
-      <footer class="text-black" style="background-color: #ffffff;">
-          <div class="container mx-auto px-4">
-              <!-- Top Section: Logo, Navigation, and Contact -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
-                  <!-- Logo and Tagline -->
-                  <!-- Logo and Tagline -->
-                  <div class="slide-up flex flex-col item-center justify-center" style="margin-top: -10px; justify-items: center; align-items: flex-start;">
-                      <img src="assets/logo-name.png" alt="Re One Astralis Logo - A stylized sun with green rays" class="h-40 w-auto">
-                      <p class="text-sm text-black">Powe ring a sustainable future with clean solar energy solutions.</p>
-                  </div>
-
-                  <!-- Navigation Links -->
-                  <div class="grid grid-cols-2 gap-4 slide-up pt-3">
-                      <div>
-                          <h5 class="font-semibold text-black mb-3">Company</h5>
-                          <ul class="space-y-2 text-sm">
-                              <li><a href="about.html" class="text-black hover:text-gray-600">About Us</a></li>
-                              <li><a href="contact.html" class="text-black hover:text-gray-600">Contact Us</a></li>
-                              <li><a href="faq.html" class="text-black hover:text-gray-600">FAQs</a></li>
-                          </ul>
-                      </div>
-                      <div>
-                          <h5 class="font-semibold text-black mb-3">Resources</h5>
-                          <ul class="space-y-2 text-sm">
-                              <li><a href="projects.html" class="text-black hover:text-gray-600">Project Gallery</a></li>
-                              <li><a href="testimonials.html" class="text-black hover:text-gray-600">Customer Testimonials</a></li>
-                              <li><a href="#blog" class="text-black hover:text-gray-600">Blog</a></li>
-                          </ul>
-                      </div>
-                  </div>
-
-                  <!-- Contact Info -->
-                  <div class="slide-up">
-                      <h5 class="font-semibold text-black mb-3 pt-3">Get in Touch</h5>
-                      <ul class="space-y-2 text-sm">
-                          <li class="flex items-center space-x-2">
-                              <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9-6 9 6v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path>
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v4"></path>
-                              </svg>
-                              <span>T/F-7, Swagat Complex, Opp. Petrol Pump, Rambag Road, Maninagar, Ahmedabad-380008</span>
-                          </li>
-                          <li class="flex items-center space-x-2">
-                              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M9 4h6M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
-                              </svg>
-                              <a href="mailto:reoneastralispvtltd@gmail.com" class="text-black hover:text-gray-600">reoneastralispvtltd@gmail.com</a>
-                          </li>
-                          <li class="flex items-center space-x-2">
-                              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                              </svg>
-                              <a href="tel:+919157742424" class="text-black hover:text-gray-600">+91 9157742424</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-
-              <!-- Bottom Section: Social Icons and Copyright -->
-              <div class="border-t border-gray-600 pt-6 text-center slide-up">
-                  <div class="flex justify-center space-x-4 mb-4">
-                      <a href="https://x.com/Reoneastralis" class="hover-scale">
-                          <svg class="h-6 w-6 text-black hover:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                          </svg>
-                      </a>
-                      <a href="https://www.instagram.com/reone_astralis" class="hover-scale">
-                          <svg class="h-6 w-6 text-black hover:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 3.668.227 1.981 1.97 1.826 5.333.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.155 3.363 1.898 5.05 5.261 5.205C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 3.363-.155 5.05-1.898 5.205-5.261C23.986 15.668 24 15.259 24 12c0-3.259-.014-3.668-.072-4.948-.155-3.363-1.898-5.05-5.261-5.205C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
-                          </svg>
-                      </a>
-                  </div>
-                  <p class="text-sm text-black">© 2025 Re One Astralis. All rights reserved.</p>
-              </div>
+  <div id="footer-content">
+    <footer class="text-black" style="background-color: #ffffff;">
+      <div class="container mx-auto px-4">
+        <!-- Top Section: Logo, Navigation, and Contact -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+          <!-- Logo and Tagline -->
+          <!-- Logo and Tagline -->
+          <div class="slide-up flex flex-col item-center justify-center"
+            style="margin-top: -10px; justify-items: center; align-items: flex-start;">
+            <img src="assets/logo-name.png" alt="Re One Astralis Logo - A stylized sun with green rays"
+              class="h-40 w-auto">
+            <p class="text-sm text-black">Powering a sustainable future with clean solar energy solutions.</p>
           </div>
-      </footer>
+
+          <!-- Navigation Links -->
+          <div class="grid grid-cols-2 gap-4 slide-up pt-3">
+            <div>
+              <h5 class="font-semibold text-black mb-3">Company</h5>
+              <ul class="space-y-2 text-sm">
+                <li><a href="about.html" class="text-black hover:text-gray-600">About Us</a></li>
+                <li><a href="contact.html" class="text-black hover:text-gray-600">Contact Us</a></li>
+                <li><a href="faq.html" class="text-black hover:text-gray-600">FAQs</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold text-black mb-3">Resources</h5>
+              <ul class="space-y-2 text-sm">
+                <li><a href="projects.html" class="text-black hover:text-gray-600">Project Gallery</a></li>
+                <li><a href="testimonials.html" class="text-black hover:text-gray-600">Customer Testimonials</a></li>
+                <li><a href="#blog" class="text-black hover:text-gray-600">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="slide-up">
+            <h5 class="font-semibold text-black mb-3 pt-3">Get in Touch</h5>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center space-x-2">
+                <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l9-6 9 6v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v4"></path>
+                </svg>
+                <span>T/F-7, Swagat Complex, Opp. Petrol Pump, Rambag Road, Maninagar, Ahmedabad-380008</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 10h18M9 4h6M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
+                </svg>
+                <a href="mailto:reoneastralispvtltd@gmail.com"
+                  class="text-black hover:text-gray-600">reoneastralispvtltd@gmail.com</a>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg>
+                <a href="tel:+919157742424" class="text-black hover:text-gray-600">+91 9157742424</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Section: Social Icons and Copyright -->
+        <div class="border-t border-gray-600 pt-6 text-center slide-up">
+          <div class="flex justify-center space-x-4 mb-4">
+            <a href="https://x.com/Reoneastralis" class="hover-scale">
+              <svg class="h-6 w-6 text-black hover:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/reone_astralis" class="hover-scale">
+              <svg class="h-6 w-6 text-black hover:text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 3.668.227 1.981 1.97 1.826 5.333.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.155 3.363 1.898 5.05 5.261 5.205C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 3.363-.155 5.05-1.898 5.205-5.261C23.986 15.668 24 15.259 24 12c0-3.259-.014-3.668-.072-4.948-.155-3.363-1.898-5.05-5.261-5.205C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+              </svg>
+            </a>
+          </div>
+          <p class="text-sm text-black">© 2025 Re One Astralis. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 
 
@@ -565,4 +694,5 @@
     revealSection();
   </script>
 </body>
+
 </html>
